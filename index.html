@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Falsfad_Circut</title>
+    
+</head>
+<body>
+    <div  class="navbar">
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">File</a>
+                <div class="dropdown-content">
+                  <a href="#">New Blank Circuit</a>
+                  <a href="#">Open File...</a>
+                  <a href="#">Import From Text...</a>
+                  <a href="#">Import From Dropbox..</a>
+                  <a href="#">Save As..</a>
+                  <a href="#">Export as link</a>
+                  <a href="#">Export as Text..</a>
+                  <a href="#">Export as Image..</a>
+                  <a href="#">Export as SVG..</a>
+                  <a href="#">Create Subcircuit..</a>
+                  <a href="#">Find DC Operating point</a>
+                  <a href="#">Recover Auto Save</a>
+                  <a href="#">Print</a>
+                  <a href="#">Toggle Full Screen</a>
+                  <a href="#">About</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Edit</a>
+                <div class="dropdown-content">
+                    <a href="#">Undo</a>
+                    <a href="#">Redo</a>
+                    <a href="#">Cut</a>
+                    <a href="#">Copy</a>
+                    <a href="#">Paste</a>
+                    <a href="#">Duplicate</a>
+                    <a href="#">Select All</a>
+                    <a href="#">Find Component</a>
+                    <a href="#">Center Circuit</a>
+                    <a href="#">Zoom 100%</a>
+                    <a href="#">Zoom In</a>
+                    <a href="#">Zoom Out</a>
+                </div>
+              </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Draw</a>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Undo</a>
+                <a href="#">Redo</a>
+                <a href="#">Cut</a>
+                <a href="#">Copy</a>
+                <a href="#">Paste</a>
+                <a href="#">Duplicate</a>
+                <a href="#">Select All</a>
+                <a href="#">Find Component</a>
+                <a href="#">Center Circuit</a>
+                <a href="#">Zoom 100%</a>
+                <a href="#">Zoom In</a>
+                <a href="#">Zoom Out</a>
+              </div>
+            </li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Scopes</a>
+                <div class="dropdown-content">
+                  <a href="#">Stack All</a>
+                  <a href="#">Unstack All</a>
+                  <a href="#">Combine All</a>
+                  <a href="#">Separate All</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Options</a>
+                <div class="dropdown-content">
+                    <a href="#">Show Current</a>
+                    <a href="#">Show Voltage </a>
+                    <a href="#">Show Power</a>
+                    <a href="#">Show Values</a>
+                    <a href="#">Small Grid</a>
+                    <a href="#">Show Cursor Cross Hairs</a>
+                    <a href="#">Europian Resistors</a>
+                    <a href="#">IEC Gates</a>
+                    <a href="#">White Background</a>
+                    <a href="#">Conventional Current Motion</a>
+                    <a href="#">Disable Editting</a>
+                    <a href="#">Edit Values with Mouse Wheel</a>
+                    <a href="#">Shortcuts..</a>
+                    <a href="#">Other Options</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Circuits
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">Basics</a>
+                    <a href="#">A/C circuits </a>
+                    <a href="#">Passive Filters</a>
+                    <a href="#">Other Passive Circuits</a>
+                    <a href="#">Diodes</a>
+                    <a href="#">Op-Amps</a>
+                    <a href="#">Transistors</a>
+                    <a href="#">555 Timer Chip</a>
+                    <a href="#">Active Filters</a>
+                    <a href="#">Logic Families</a>
+                    <a href="#">COmbinational Logic </a>
+                    <a href="#">Sequential Logic</a>
+                    <a href="#">Analog/Digital</a>
+                    <a href="#">Power Converter</a>
+                    <a href="#">Phase Locked Loops</a>
+                    <a href="#">Transmission Lines</a>
+                    <a href="#">Misc Devices</a>
+                    <a href="#">Blank Circuits</a>
+                </div>
+              </li>
+          </ul>
+          
+    </div>
+    <div style="position: absolute; overflow: hidden; top: 30px; right: 0px; bottom: 0px; width: 166px;">
+      <button type="button" class="topButton">Reset</button>
+      <button type="button" class="topButton">
+        <strong>RUN</strong>&nbsp;/&nbsp;Stop</button>
+    <div class="gwt-Label topSpace disabled">Power Brightness</div>
+    <input type="range" id="size-slider" min="1" max="20" value="5">
+    
+    <div class="gwt-Label topSpace">Simulation Speed</div>
+    <input type="range" id="size-slider" min="1" max="20" value="5">
+
+    <div class="gwt-Label topSpace">Current Speed</div>
+    <input type="range" id="size-slider" min="1" max="20" value="5">
+
+    
+  </div>
+  
+
+  
+    <div style="position: absolute; overflow: hidden; inset: 30px 166px 0px 0px;">
+        <canvas width="" height=""  style="width: 1300px;  position: absolute;inset: 0px; background-color: rgb(0, 0, 0);" class="myCanvas" id="myCanvas"></canvas> 
+        <!-- cursor to be displayed when pointing over an element -->
+
+    </div>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
